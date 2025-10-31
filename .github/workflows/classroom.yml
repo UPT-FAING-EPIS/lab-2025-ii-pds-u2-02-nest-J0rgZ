@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: t1
-        setup-command: cd notifications && npm ci
+        setup-command: cd notifications && npm install
         command: cd notifications && npm run test:cov
         timeout: 10
         max-score: 2
@@ -27,7 +27,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: t2
-        setup-command: cd customer-app && npm ci
+        setup-command: cd customer-app && npm install
         command: cd customer-app && npm run test:cov
         timeout: 10
         max-score: 2
